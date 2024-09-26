@@ -1,0 +1,125 @@
+{
+  "version": "string",
+  "scanId": "string",
+  "documents": [
+    {
+      "average_generated_prob": 0,
+      "class_probabilities": {
+        "ai": 0,
+        "human": 0,
+        "mixed": 0
+      },
+      "completely_generated_prob": 0,
+      "confidence_category": "high",
+      "confidence_score": 0,
+      "confidence_scores_raw": {
+        "softmax": {
+          "ai": 0,
+          "human": 0,
+          "mixed": 0
+        }
+      },
+      "confidence_thresholds_raw": {
+        "softmax": {
+          "ai": {
+            "low": 0,
+            "medium": 0,
+            "reject": 0
+          },
+          "human": {
+            "low": 0,
+            "medium": 0,
+            "reject": 0
+          },
+          "mixed": {
+            "low": 0,
+            "medium": 0,
+            "reject": 0
+          }
+        }
+      },
+      "overall_burstiness": 0,
+      "paragraphs": [
+        {
+          "completely_generated_prob": 0,
+          "num_sentences": 0,
+          "start_sentence_index": 0
+        }
+      ],
+      "predicted_class": "string",
+      "sentences": [
+        {
+          "generated_prob": 0,
+          "perplexity": 0,
+          "sentence": "string",
+          "highlight_sentence_for_ai": true
+        }
+      ],
+      "writing_stats": {
+        "categorized_scores": {
+          "Average Sentence Length": "string",
+          "Burstiness": "string",
+          "Percent SAT": "string",
+          "Perplexity": "string",
+          "Readability": "string",
+          "Simplicity": "string"
+        },
+        "norm_scores": {
+          "Average Sentence Length": 0,
+          "Burstiness": 0,
+          "Percent SAT": 0,
+          "Perplexity": 0,
+          "Readability": 0,
+          "Simplicity": 0
+        },
+        "raw_scores": {
+          "Average Sentence Length": 0,
+          "Burstiness": 0,
+          "Percent SAT": 0,
+          "Perplexity": 0,
+          "Readability": 0,
+          "Simplicity": 0
+        }
+      },
+      "result_message": "string",
+      "result_sub_message": "string",
+      "document_classification": "string",
+      "version": "string",
+      "document_id": "string"
+    }
+  ]
+}
+
+{
+  "Documents": [
+    {
+    'average_generated_prob': 1, 'class_probabilities': {'ai': 1, 'human': 0, 'mixed': 0
+      }, 
+  'completely_generated_prob': 1, 
+  'confidence_category': 'high', 
+  'confidence_score': 1, 
+  'confidence_scores_raw': {
+      'identity': {
+        'ai': 1, 'human': 0, 'mixed': 0
+        }
+      }, 
+  'confidence_thresholds_raw': {'identity': {'ai': {'low': 0.82, 'medium': 0.92, 'reject': 0.7
+          }, 'human': {'low': 0.8, 'medium': 0.88, 'reject': 0.7
+          }, 'mixed': {'low': 0.75, 'medium': 0.88, 'reject': 0.7
+          }
+        }
+      }, 'overall_burstiness': 13.428824424743652, 'paragraphs': [
+        {'completely_generated_prob': 0.850090677245877, 'num_sentences': 3, 'start_sentence_index': 0
+        }
+      ], 'predicted_class': 'ai', 'sentences': [
+        {'generated_prob': 0.9999270439147949, 'perplexity': 13, 'sentence': "In today's world, technology plays an important role in our lives, 
+from communication to business operations.", 'highlight_sentence_for_ai': True}, 
+          {'generated_prob': 0.9999222755432129, 'perplexity': 38, 'sentence': 'It allows us to stay connected and be productive.', 'highlight_sentence_for_ai': True
+          },
+          {'generated_prob': 0.9999327659606934, 'perplexity': 17, 'sentence': 'Understanding how these technologies work and how to utilize them is critical to success in the modern age.', 'highlight_sentence_for_ai': True
+          }
+        ], 'writing_stats': {}, 
+'result_message': 'Our detector is highly confident that the text is written by AI.', 'result_sub_message': '', 'document_classification': 'AI_ONLY', 'version': '2024-08-02-base', 'language': 'en', 'inputText': "In today's world, technology plays an important role in our lives, from communication to business operations. It allows us to stay connected and be productive. Understanding how these technologies work and how to utilize them is critical to success in the modern age."
+      }
+    ]
+  }

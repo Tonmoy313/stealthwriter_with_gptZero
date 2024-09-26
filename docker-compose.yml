@@ -1,0 +1,19 @@
+version: '3.8'  # or any compatible version
+
+services:
+  mongo:
+    image: mongo:latest
+    container_name: mongo-stealthWriter
+    restart: always
+    ports:
+      - "27018:27018"
+    volumes:
+      # - mongo_data:/data/db  # This is a valid volume mapping for MongoDB
+       - C:\Users\HP\Downloads\Mongo\Docker:/data/db
+    # environment:
+    #   MONGO_INITDB_DATABASE: logs
+    #   MONGO_INITDB_ROOT_USERNAME: root
+    #   MONGO_INITDB_ROOT_PASSWORD: 1234
+
+volumes:
+  mongo_data:  # Define the volume here
