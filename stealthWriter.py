@@ -99,12 +99,13 @@ async def stealth_ai_login(email, password):
             print("Waiting for the next paragraph...")
             await asyncio.sleep(1)  
 
-        print("========No More Data to Process=========")
+        print("\n========No More Data to Process=========\n")
+        print(f"\n\t\t\t\t\t\t\t!X_X!.....Stealth Writer process is terminating......!X_X!\n")
         await browser.close()
         return True
     
     except Exception as error:
-        print('Error Occurred on stealthAiLogin Pyppeteer:', error)
+        print('Error Occurred on stealthWriter Process:', error)
         return False
 
 

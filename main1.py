@@ -2,22 +2,19 @@
 
 import threading
 import subprocess
-import time
 
 def run_stealth_writer():
-    print("Stealth Writer Process Running")
+    print("\n*****Stealth Writer Process Running*****\n")
     subprocess.run(['python', 'stealthWriter.py'])
+    # if result.returncode == 0:
+    print("\n*****Stealth Writer Process is terminated*****\n")
+
 
 def run_gpt_score():
-    print("GptZero Process Running")
-    while True:
-        result = subprocess.run(['python', 'gptScore.py'])
-        if result.returncode == 0:
-            print("*****GptZero Process Completed Successfully****")
-            break
-        else:
-            print("No data found for GptZero, waiting to retry...")
-            time.sleep(60)
+    print("\n*****GptZero Process Running*****\n")
+    subprocess.run(['python', 'gptScore.py'])
+    # if result.returncode == 0:
+    print("\n*****GptZero Process is terminated*****\n")
 
 if __name__ == "__main__":
     # Create threads

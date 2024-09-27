@@ -40,7 +40,7 @@ def store_humanized_text(db, documents, scraping_data_id):
         if result:
             collection2 = db['demo']
             collection2.update_one({"_id": scraping_data_id}, {"$set": {"processed": True}})
-            print("Done stealthWirting Process for id:", scraping_data_id)
+            # print("Done stealthWirting Process for id:", scraping_data_id)
         print(f"Humanized texts stored successfully")
         return result
         
@@ -62,7 +62,7 @@ def fetch_humanized_texts_for_gptZero(db):
             cursor = collection1.find({"scraping_id": document["_id"]}).sort("sentence_no", 1)
             return cursor
         else:
-            print("No text available for GPTZero processing.")
+            print("No Data available for GPTZero processing.")
             return None
         
     except Exception as e:
